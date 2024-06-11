@@ -1,4 +1,4 @@
-// Guess the Number
+// Guess the Number Game
 
 let gameNum = 8;
 let Num = prompt("Guess the Number That I've stored ");
