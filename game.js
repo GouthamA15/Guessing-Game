@@ -8,10 +8,12 @@ let chance = 5;
 while (Num != gameNum && chance > 0) {
     Num = prompt("Your Wrong, Guess the Number Again. You have few chances");
     chance--;
-    if (chance == 0) {
+    if(Num != gameNum) {
+        console.log("You have",chance,"chances left");
+    }
+    else {
         break;
     }
-    console.log("You have",chance,"chances left");
 }
 
 
