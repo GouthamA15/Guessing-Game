@@ -1,15 +1,15 @@
 // Guess the Number Game
 
-let gameNum = 8;
+let gameNum = 87;
 let Num = prompt("Guess the Number That I've stored ");
 let chance = 5;
 
 
 while (Num != gameNum && chance > 0) {
-    Num = prompt("Your Wrong, Guess the Number Again. You have few chances");
+    Num = prompt(`Your Wrong, Guess the Number Again. You have ${chance} chances left`);
     chance--;
     if(Num != gameNum) {
-        console.log("You have",chance,"chances left");
+        console.log(`You have ${chance} chances left`);
     }
     else {
         break;
@@ -23,4 +23,5 @@ if(Num == gameNum) {
 }
 else {
     alert("Sorry, You've Lost");
+    console.log("Refresh to Start Again");
 }
