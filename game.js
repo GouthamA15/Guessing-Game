@@ -6,10 +6,13 @@ let chance = 5;
 
 
 while (Num != gameNum && chance > 0) {
-    Num = prompt(`Your Wrong, Guess the Number Again. You have ${chance} chances left`);
+    if(Num > gameNum) {
+    Num = prompt(`Too High, Guess the Number Again. You have ${chance} chances left`);
     chance--;
-    if(Num != gameNum) {
-        console.log(`You have ${chance} chances left`);
+    }
+    else if(Num < gameNum) {
+    Num = prompt(`Too Low, Guess the Number Again. You have ${chance} chances left`);
+    chance--;
     }
     else {
         break;
