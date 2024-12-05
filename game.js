@@ -1,6 +1,6 @@
 // Guess the Number Game
 
-let gameNum = 87;
+let gameNum = 78;
 let Num = prompt("Guess the Number That I've stored ");
 let chance = 5;
 
